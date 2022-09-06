@@ -28,8 +28,7 @@ def calculator():
   num1 = float(input("What's the first number?: "))
   print("\n")
   for key in operations:
-    print(key)          # this alone would print each in a new line
-                        # to print corresponding values -> print(operations(key))
+    print(key)          # to print corresponding values -> print(operations(key))
   
   
   keep_going = True
@@ -66,8 +65,8 @@ def calculator():
       keep_going = False
       clear()
       
-      # if I want 'n' to restart the calculator from scratch I'll use recursion -> the function, that              calls itself and thus restarts the calculator from scratch: 
-      calculator()      # there needs to be a condition for the function to call itself or it's gonna run                            forever
+      # if I want 'n' to restart the calculator from scratch I'll use recursion -> the function, that calls itself and thus restarts the calculator from scratch: 
+      calculator()      # there needs to be a condition for the function to call itself or it's gonna run forever
       
 
 calculator()
